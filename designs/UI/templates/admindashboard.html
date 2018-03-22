@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <link type="text/css" rel="stylesheet" href="../static/css/style.css">
+        <link type="text/css" rel="stylesheet" href="../static/css/animate.css">
+        <title>Admin Dashboard</title>
+</head>
+<body>
+    <div id="container-fluid">
+        <div id="header">
+            <div class="jumbotron">
+                <h2 style="color:white;">Welcome to the Admin Dashboard</h2>
+            </div>
+        </div> <!--div header end-->
+        <div id="nav">
+                <ul class="nav navbar-nav">
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="#">About Hello-Books</a></li>
+                    <li><a href="all_books.html">View all books</a></li>  
+                    <li><a href="adminmanage.html">Manage Books</a></li>               
+                    <li><a href="logout.html">Logout</a></li>
+                    
+                </ul>
+            </div>
+        <div id="body">
+             <div class="row">
+                 <div class="col-lg-4">
+                     <h3 style="text-align:center; background-color:rgb(160, 9, 9);">Users yet to return books</h3>
+                     <div class="table-responsive">
+                         <table class="table table-stripped">
+                             <thead>
+                                 <tr>
+                                     <th>User Email</th>
+                                     <th>Books Owed</th>
+                                 </tr>
+                             </thead>
+                             <tbody>
+                                 <tr>
+                                     <td>kingsley0@gmail.com</td>
+                                     <td>Data Structures and Algorithm</td>
+                                 </tr>
+                             </tbody>
+                         </table>
+                     </div>
+                 </div>
+                 <div class="col-lg-4">
+                     <div id = "bookform">
+                            <form class="form" method="post" action="">
+                                <div class ="form-group">
+                                     <h3 style="text-align:center; background-color:green;color:white;">Book Details</h3>
+                                     <label>Author</label><br>
+                                     <input class="form-control" type="text" name="author" placeholder="Author" autofocus="True">
+                                     <label>Book title</label><br>
+                                     <input class="form-control" type="text" name="title" placeholder="Book title" autofocus="True">
+                                     <label>Publisher</label><br>
+                                     <input class="form-control" type="text" name="publisher" placeholder="Book Publisher" autofocus="True">
+                                     <label>Auhor</label><br>
+                                     <input class="form-control" type="text" name="edition" placeholder="Book Edition" autofocus="True">
+                                     <label>Category</label><br>
+                                     <select class="form-control" name="category">
+                                           <option value="">Select category</option>             
+                                                     <option value="programming">programming</option>
+                                                     <option value="community events">Community events</option>
+                                                     <option value="Techonlogy events">Technology events</option>
+                                                     <option value="local events">Local  events</option>
+                                            </select>
+                                            <button type="submit" class="btn btn-primary">New Book</button>
+                                            <button type=reset class="btn btn-warning">Reset</button>
+                                
+                                </div>
+                            </form>
+                        </div><!-- end id book form -->
+                 </div>
+                 <div class="col-lg-4">
+                     <h3></h3>
+                 </div>
+             </div><!--row1 end-->
+             <div class="row">
+                     <div class="col-lg-4">
+                         <h3></h3>
+                     </div>
+                     <div class="col-lg-4">
+                         <h3></h3>
+                     </div>
+                     <div class="col-lg-4">
+                         <h3></h3>
+                     </div>
+             </div> <!--row2 end-->
+        </div>
+        <div id="footer">
+            <p>Copyright &2018.All right resreved</p>
+        </div>
+    </div><!--container-fluid end-->
+</body>
+</html>
