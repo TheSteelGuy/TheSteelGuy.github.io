@@ -1,0 +1,4 @@
+#directories/files not included in the repository
+#temporary python files
+#any file ending with ~
+*~
