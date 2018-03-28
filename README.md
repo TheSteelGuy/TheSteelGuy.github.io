@@ -7,7 +7,7 @@ Anybody can see the list of available books.
 
 
 #### Getting Started
-
+access the pages here https://thesteelguy.github.io/
 
 #### Usage
 With the app Hello-Books:
